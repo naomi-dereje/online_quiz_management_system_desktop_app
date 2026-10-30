@@ -1,0 +1,12 @@
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.csproj.AssemblyReference.cache
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizManagementSystem.Properties.Resources.resources
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.csproj.GenerateResource.cache
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.csproj.CoreCompileInputs.cache
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\bin\Debug\QuizManagementSystem.exe.config
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\bin\Debug\QuizManagementSystem.exe
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\bin\Debug\QuizManagementSystem.pdb
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.Forms.Home.resources
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizManagementSystem.exe
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizManagementSystem.pdb
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.Forms.LoginForm.resources
+C:\Users\naomi\source\repos\QuizManagementSystem\QuizManagementSystem\obj\Debug\QuizMaster.Forms.RegisterForm.resources
