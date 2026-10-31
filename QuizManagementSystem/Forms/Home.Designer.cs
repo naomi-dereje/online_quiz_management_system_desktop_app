@@ -31,19 +31,19 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.menuMain = new System.Windows.Forms.MenuStrip();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusMain = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDate = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnlBrand = new System.Windows.Forms.Panel();
-            this.lblBrand = new System.Windows.Forms.Label();
-            this.pnlLine = new System.Windows.Forms.Panel();
-            this.lbltaketimedquiz = new System.Windows.Forms.Label();
-            this.lblgetinstantresult = new System.Windows.Forms.Label();
             this.lblreviewyourhistory = new System.Windows.Forms.Label();
+            this.lblgetinstantresult = new System.Windows.Forms.Label();
+            this.lbltaketimedquiz = new System.Windows.Forms.Label();
+            this.pnlLine = new System.Windows.Forms.Panel();
+            this.lblBrand = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblTagline = new System.Windows.Forms.Label();
             this.lblIntro = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             this.helpToolStripMenuItem});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(1012, 33);
+            this.menuMain.Size = new System.Drawing.Size(1012, 36);
             this.menuMain.TabIndex = 1;
             this.menuMain.Text = "menuStrip1";
             // 
@@ -85,36 +85,36 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(54, 30);
             this.viewToolStripMenuItem.Text = "File";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(141, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem1
             // 
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(65, 32);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(65, 30);
             this.viewToolStripMenuItem1.Text = "View";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 30);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // StatusMain
             // 
@@ -156,40 +156,21 @@
             this.pnlBrand.Controls.Add(this.pnlLine);
             this.pnlBrand.Controls.Add(this.lblBrand);
             this.pnlBrand.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlBrand.Location = new System.Drawing.Point(732, 33);
+            this.pnlBrand.Location = new System.Drawing.Point(732, 36);
             this.pnlBrand.Name = "pnlBrand";
-            this.pnlBrand.Size = new System.Drawing.Size(280, 557);
+            this.pnlBrand.Size = new System.Drawing.Size(280, 554);
             this.pnlBrand.TabIndex = 3;
             // 
-            // lblBrand
+            // lblreviewyourhistory
             // 
-            this.lblBrand.AutoSize = true;
-            this.lblBrand.Font = new System.Drawing.Font("Georgia", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrand.ForeColor = System.Drawing.Color.White;
-            this.lblBrand.Location = new System.Drawing.Point(24, 40);
-            this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(249, 51);
-            this.lblBrand.TabIndex = 0;
-            this.lblBrand.Text = "QuizMaster";
-            // 
-            // pnlLine
-            // 
-            this.pnlLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(165)))), ((int)(((byte)(38)))));
-            this.pnlLine.Location = new System.Drawing.Point(21, 101);
-            this.pnlLine.Name = "pnlLine";
-            this.pnlLine.Size = new System.Drawing.Size(103, 5);
-            this.pnlLine.TabIndex = 1;
-            // 
-            // lbltaketimedquiz
-            // 
-            this.lbltaketimedquiz.AutoSize = true;
-            this.lbltaketimedquiz.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbltaketimedquiz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.lbltaketimedquiz.Location = new System.Drawing.Point(65, 180);
-            this.lbltaketimedquiz.Name = "lbltaketimedquiz";
-            this.lbltaketimedquiz.Size = new System.Drawing.Size(165, 30);
-            this.lbltaketimedquiz.TabIndex = 2;
-            this.lbltaketimedquiz.Text = "Take timed quiz";
+            this.lblreviewyourhistory.AutoSize = true;
+            this.lblreviewyourhistory.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblreviewyourhistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.lblreviewyourhistory.Location = new System.Drawing.Point(65, 260);
+            this.lblreviewyourhistory.Name = "lblreviewyourhistory";
+            this.lblreviewyourhistory.Size = new System.Drawing.Size(202, 30);
+            this.lblreviewyourhistory.TabIndex = 4;
+            this.lblreviewyourhistory.Text = "Review your history";
             // 
             // lblgetinstantresult
             // 
@@ -202,16 +183,35 @@
             this.lblgetinstantresult.TabIndex = 3;
             this.lblgetinstantresult.Text = "Get instant results";
             // 
-            // lblreviewyourhistory
+            // lbltaketimedquiz
             // 
-            this.lblreviewyourhistory.AutoSize = true;
-            this.lblreviewyourhistory.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblreviewyourhistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.lblreviewyourhistory.Location = new System.Drawing.Point(65, 260);
-            this.lblreviewyourhistory.Name = "lblreviewyourhistory";
-            this.lblreviewyourhistory.Size = new System.Drawing.Size(202, 30);
-            this.lblreviewyourhistory.TabIndex = 4;
-            this.lblreviewyourhistory.Text = "Review your history";
+            this.lbltaketimedquiz.AutoSize = true;
+            this.lbltaketimedquiz.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lbltaketimedquiz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.lbltaketimedquiz.Location = new System.Drawing.Point(65, 180);
+            this.lbltaketimedquiz.Name = "lbltaketimedquiz";
+            this.lbltaketimedquiz.Size = new System.Drawing.Size(165, 30);
+            this.lbltaketimedquiz.TabIndex = 2;
+            this.lbltaketimedquiz.Text = "Take timed quiz";
+            // 
+            // pnlLine
+            // 
+            this.pnlLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(165)))), ((int)(((byte)(38)))));
+            this.pnlLine.Location = new System.Drawing.Point(21, 101);
+            this.pnlLine.Name = "pnlLine";
+            this.pnlLine.Size = new System.Drawing.Size(103, 5);
+            this.pnlLine.TabIndex = 1;
+            // 
+            // lblBrand
+            // 
+            this.lblBrand.AutoSize = true;
+            this.lblBrand.Font = new System.Drawing.Font("Georgia", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrand.ForeColor = System.Drawing.Color.White;
+            this.lblBrand.Location = new System.Drawing.Point(24, 40);
+            this.lblBrand.Name = "lblBrand";
+            this.lblBrand.Size = new System.Drawing.Size(249, 51);
+            this.lblBrand.TabIndex = 0;
+            this.lblBrand.Text = "QuizMaster";
             // 
             // lblTitle
             // 
@@ -291,7 +291,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(90)))), ((int)(((byte)(92)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuMain;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuizMaster";

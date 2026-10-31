@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuizMaster.Models;
 
 namespace QuizMaster.Forms
 {
@@ -45,6 +46,7 @@ namespace QuizMaster.Forms
         {
             lblError.Visible = false;
             string id = txtId.Text.Trim();
+            
 
             if (id == "" || txtPassword.Text == "")
             {
@@ -66,14 +68,33 @@ namespace QuizMaster.Forms
                 txtPassword.Focus();
                 return;
             }
-
             Session.CurrentUser = user;
-            MessageBox.Show("Welcome, " + user.FullName + " (" + user.Role + ")");
+
+            if (user.Role == Role.Lecturer)
+            {
+                Hide();
+                using (var main = new LecturerMainForm())
+                {
+                    main.ShowDialog();
+                }
+                Session.CurrentUser = null;
+                txtPassword.Clear();
+                Show();
+            }
+            else
+            {
+                MessageBox.Show("Welcome, " + user.FullName + " (" + user.Role + ") – this role's window comes later.");
+            }
         }
         private void ShowError(string message)
         {
             lblError.Text = message;
             lblError.Visible = true;
+        }
+
+        private void cmbRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

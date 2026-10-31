@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.pnlBrand = new System.Windows.Forms.Panel();
-            this.lnlBrand = new System.Windows.Forms.Label();
-            this.pnlLine = new System.Windows.Forms.Panel();
             this.lblSub = new System.Windows.Forms.Label();
+            this.pnlLine = new System.Windows.Forms.Panel();
+            this.lnlBrand = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.cmbRole = new System.Windows.Forms.ComboBox();
@@ -58,6 +58,23 @@
             this.pnlBrand.Size = new System.Drawing.Size(280, 622);
             this.pnlBrand.TabIndex = 0;
             // 
+            // lblSub
+            // 
+            this.lblSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.lblSub.Location = new System.Drawing.Point(28, 140);
+            this.lblSub.Name = "lblSub";
+            this.lblSub.Size = new System.Drawing.Size(220, 103);
+            this.lblSub.TabIndex = 2;
+            this.lblSub.Text = "Sign in to continue. You will be taken to the screen for your role.";
+            // 
+            // pnlLine
+            // 
+            this.pnlLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(165)))), ((int)(((byte)(38)))));
+            this.pnlLine.Location = new System.Drawing.Point(22, 100);
+            this.pnlLine.Name = "pnlLine";
+            this.pnlLine.Size = new System.Drawing.Size(103, 5);
+            this.pnlLine.TabIndex = 1;
+            // 
             // lnlBrand
             // 
             this.lnlBrand.AutoSize = true;
@@ -68,23 +85,6 @@
             this.lnlBrand.Size = new System.Drawing.Size(249, 51);
             this.lnlBrand.TabIndex = 0;
             this.lnlBrand.Text = "QuizMaster";
-            // 
-            // pnlLine
-            // 
-            this.pnlLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(165)))), ((int)(((byte)(38)))));
-            this.pnlLine.Location = new System.Drawing.Point(22, 100);
-            this.pnlLine.Name = "pnlLine";
-            this.pnlLine.Size = new System.Drawing.Size(103, 5);
-            this.pnlLine.TabIndex = 1;
-            // 
-            // lblSub
-            // 
-            this.lblSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.lblSub.Location = new System.Drawing.Point(28, 140);
-            this.lblSub.Name = "lblSub";
-            this.lblSub.Size = new System.Drawing.Size(220, 103);
-            this.lblSub.TabIndex = 2;
-            this.lblSub.Text = "Sign in to continue. You will be taken to the screen for your role.";
             // 
             // lblTitle
             // 
@@ -113,12 +113,13 @@
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Items.AddRange(new object[] {
             "Student",
-            "Lecture",
+            "Lecturer",
             "Admin"});
             this.cmbRole.Location = new System.Drawing.Point(350, 140);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(340, 36);
             this.cmbRole.TabIndex = 0;
+            this.cmbRole.SelectedIndexChanged += new System.EventHandler(this.cmbRole_SelectedIndexChanged);
             // 
             // lblId
             // 
@@ -230,7 +231,7 @@
             this.Controls.Add(this.pnlBrand);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
