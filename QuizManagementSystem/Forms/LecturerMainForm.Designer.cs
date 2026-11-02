@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             this.statusMain = new System.Windows.Forms.StatusStrip();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lohoutAndExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUser = new System.Windows.Forms.ToolStripStatusLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlSide = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnQuizzes = new System.Windows.Forms.Button();
             this.btnQuestions = new System.Windows.Forms.Button();
             this.btnResults = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.lblPage = new System.Windows.Forms.Label();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusMain.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnlSide.SuspendLayout();
@@ -64,6 +65,22 @@
             this.statusMain.TabIndex = 0;
             this.statusMain.Text = "statusStrip1";
             // 
+            // lblStatus
+            // 
+            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(1001, 25);
+            this.lblStatus.Spring = true;
+            this.lblStatus.Text = "Ready";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
+            // 
+            // lblUser
+            // 
+            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(179, 25);
+            this.lblUser.Text = "toolStripStatusLabel1";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
@@ -80,16 +97,19 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lohoutAndExitToolStripMenuItem});
+            this.ExitToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 32);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
-            // lohoutAndExitToolStripMenuItem
+            // ExitToolStripMenuItem
             // 
-            this.lohoutAndExitToolStripMenuItem.Name = "lohoutAndExitToolStripMenuItem";
-            this.lohoutAndExitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.lohoutAndExitToolStripMenuItem.Text = "Logout and Exit";
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ExitToolStripMenuItem.Text = "Exit";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.logoutAndExitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -106,21 +126,6 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // lblStatus
-            // 
-            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(1001, 25);
-            this.lblStatus.Spring = true;
-            this.lblStatus.Text = "Ready";
-            // 
-            // lblUser
-            // 
-            this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(179, 25);
-            this.lblUser.Text = "toolStripStatusLabel1";
-            // 
             // pnlSide
             // 
             this.pnlSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(54)))), ((int)(((byte)(58)))));
@@ -135,6 +140,21 @@
             this.pnlSide.Name = "pnlSide";
             this.pnlSide.Size = new System.Drawing.Size(190, 725);
             this.pnlSide.TabIndex = 2;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
+            this.btnLogout.Location = new System.Drawing.Point(0, 681);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(190, 44);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnDashboard
             // 
@@ -216,21 +236,6 @@
             this.btnStudents.UseVisualStyleBackColor = true;
             this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
-            // btnLogout
-            // 
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(236)))));
-            this.btnLogout.Location = new System.Drawing.Point(0, 681);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(190, 44);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // pnlContent
             // 
             this.pnlContent.Controls.Add(this.lblPage);
@@ -252,6 +257,13 @@
             this.lblPage.Size = new System.Drawing.Size(193, 41);
             this.lblPage.TabIndex = 0;
             this.lblPage.Text = "Dashboard";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // LecturerMainForm
             // 
@@ -287,7 +299,7 @@
         private System.Windows.Forms.StatusStrip statusMain;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lohoutAndExitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
@@ -301,5 +313,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Label lblPage;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

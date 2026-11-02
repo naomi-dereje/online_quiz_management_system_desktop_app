@@ -76,6 +76,24 @@ namespace QuizMaster.Services
                 }
             });
             Quizzes.Add(q);
+            Quizzes.Add(new Quiz
+            {
+                Id = 2,
+                Title = "Web Development",
+                DurationMinutes = 60,
+                AvailableFrom = DateTime.Today,
+                AvailableUntil = DateTime.Today.AddDays(30),
+                Status = QuizStatus.Draft
+            });
+            Quizzes.Add(new Quiz
+            {
+                Id = 3,
+                Title = "Introduction to Programming",
+                DurationMinutes = 30,
+                AvailableFrom = DateTime.Today.AddDays(-30),
+                AvailableUntil = DateTime.Today.AddDays(-5),
+                Status = QuizStatus.Published
+            });
         }
     }
 }

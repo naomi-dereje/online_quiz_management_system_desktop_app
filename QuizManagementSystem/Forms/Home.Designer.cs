@@ -76,7 +76,7 @@
             this.helpToolStripMenuItem});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(1012, 36);
+            this.menuMain.Size = new System.Drawing.Size(1012, 33);
             this.menuMain.TabIndex = 1;
             this.menuMain.Text = "menuStrip1";
             // 
@@ -156,9 +156,9 @@
             this.pnlBrand.Controls.Add(this.pnlLine);
             this.pnlBrand.Controls.Add(this.lblBrand);
             this.pnlBrand.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlBrand.Location = new System.Drawing.Point(732, 36);
+            this.pnlBrand.Location = new System.Drawing.Point(732, 33);
             this.pnlBrand.Name = "pnlBrand";
-            this.pnlBrand.Size = new System.Drawing.Size(280, 554);
+            this.pnlBrand.Size = new System.Drawing.Size(280, 557);
             this.pnlBrand.TabIndex = 3;
             // 
             // lblreviewyourhistory

@@ -73,10 +73,15 @@ namespace QuizMaster.Forms
             if (user.Role == Role.Lecturer)
             {
                 Hide();
-                using (var main = new LecturerMainForm())
-                {
-                    main.ShowDialog();
-                }
+                using (var main = new LecturerMainForm()) { main.ShowDialog(); }
+                Session.CurrentUser = null;
+                txtPassword.Clear();
+                Show();
+            }
+            else if (user.Role == Role.Student)
+            {
+                Hide();
+                using (var main = new StudentMainForm()) { main.ShowDialog(); }
                 Session.CurrentUser = null;
                 txtPassword.Clear();
                 Show();
